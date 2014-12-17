@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\log4net.dll
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\log4net.xml
+C:\Users\Administrator\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml

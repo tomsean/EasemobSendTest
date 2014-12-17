@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        window.onload = function () {
+            var linkAndroid = document.getElementById("linkAndroid");
+            var href = linkAndroid.getAttribute("href");
+            var request = GetRequest();
+            var para = request["para"];
+            if (para) {
+                href = href + "android/" + para + "/HuiQunJob.apk";
+            } else {
+                href = href + "HuiQunJob.apk";
+            }
+            linkAndroid.setAttribute("href", href);
+            console.log(href);
+        }
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                var strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+    </script>
+    <style>
+        body {
+            font-size: 14px;
+            margin: 0px auto;
+            color: #3a3a3a;
+            line-height: 20px;
+            font-family: Verdana;
+        }
+
+        ul, dl, dd, p, span {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        img {
+            border: 0px;
+        }
+
+        a {
+            color: #002CaB;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #FF4E00;
+                text-decoration: underline;
+            }
+
+        .content {
+            margin: 0px auto;
+            width: 100%;
+        }
+
+        .top {
+            float: left;
+            background: url(http://img01.51jobcdn.com/im/3G/im/client/android/top_bj.jpg) #ADDFFF repeat-x;
+            width: 100%;
+            height: 58px;
+            padding: 0px 6px;
+        }
+
+        .text {
+            padding: 5px;
+            float: left;
+            width: 100%;
+        }
+
+        .r_title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #0047b2;
+            margin-left: 4px;
+        }
+
+        .bq {
+            float: left;
+            width: 100%;
+            border-bottom: #54bedd 1px solid;
+            height: 27px;
+        }
+
+        .xzbottom {
+            float: left;
+            width: 100%;
+            height: 37px;
+            background-color: #eaeaea;
+            padding: 6px;
+            border-bottom: #fff 1px solid;
+        }
+
+        .foot {
+            float: left;
+            width: 100%;
+            background-image: url(http://img01.51jobcdn.com/im/3G/im/client/android/footbg.jpg);
+            height: 55px;
+            background-color: #eaeaea;
+            padding: 6px;
+            border-top: #bbb 1px solid;
+        }
+
+        .font1 {
+            font-size: 10px;
+            font-weight: bold;
+            color: #0047b2;
+        }
+
+        .font2 {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .font3 {
+            font-size: 14px;
+        }
+
+        .smallred {
+            color: #FF0000;
+            font-size: 12px;
+        }
+
+        .dashedborder {
+            border-bottom: dashed 1px #CCCCCC;
+        }
+
+        td img {
+            vertical-align: middle;
+        }
+
+        .nav {
+            clear: both;
+            background: url(http://img01.51jobcdn.com/im/3G/im/client/android/nav_bg.gif) #6C7888 repeat-x;
+            width: 100%;
+            height: 35px;
+            color: #7AD2FF;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+            .nav a {
+                color: #CCC;
+            }
+
+                .nav a:hover {
+                    color: #7AD2FF;
+                    text-decoration: none;
+                }
+
+        .nav_focus {
+            background: url(http://img01.51jobcdn.com/im/3G/im/client/android/nav_bg_focus.gif) repeat-x;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td width="90"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/logo.png"></td>
+                        <td><a href="http://trace.51job.com/mktrace.php?tag=wzhan_wap_and_272_download&amp;u=aHR0cDovL3d3dy41MWpvYi5jb20vY2xpZW50LzUxam9iXzUxSk9CXzJfQU5EMi43LjIuYXBr&amp;k=cbe78a0b943b8c2c8248f0fb1143d642"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/button.png" width="114" height="37" border="0"></a></td>
+                        <td style="text-align:right"><a href="ehire_android.php"><font color="#2297DC">企业招聘</font></a>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="nav">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td width="25%" class="nav_focus">Android</td>
+                        <td width="25%"><a href="iphone.php">iPhone</a></td>
+                        <td width="30%"><a href="wp.php">WPhone</a></td>
+                        <td width="20%"><a href="http://3g.51job.com/">3G</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text">
+            <b>前程无忧51job<span class="font2"></span></b> (Android版<span class="smallred">V2.7.2</span>)<br>
+            软件大小：8.55MB<br>
+            更新时间：2014-8-29<br>
+            适用系统：Android 2.2及其以上
+        </div>
+        <div class="bq"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/bq1.png" width="92" height="27"></div>
+
+        <div class="text">
+            前程无忧51job客户端是由前程无忧(www.51job.com)精心打造的求职软件，提供职位搜索、简历投递、企业粉丝团、校园招聘等服务，为奔波在求职路上的你提供贴身帮助。
+        </div>
+
+        <div class="bq"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/bq2.png" width="92" height="27"></div>
+
+        <div class="text">
+            V2.7.2更新说明<br>
+            -在之前版本的基础上，根据用户的反馈进行快速修复和优化<br>
+            V2.7.1更新说明<br>
+            -优化简历创建流程，5分钟轻松创建简历<br>
+            -打字太麻烦？语音输入现已加入豪华求职套餐<br>
+            -响应学生党号召，新增学生信息的创建与编辑<br>
+            -新增职位分享，支持将职位一键分享给微信好友<br>
+            -支持手机号、邮箱、用户名3种登录方式，并支持使用手机号进行注册
+        </div>
+
+        <div class="bq"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/bq3.png" width="92" height="27"><a name="pic"></a></div>
+        <div class="text font2" align="center">
+            <a href="http://img01.51jobcdn.com/im/3G/im/client/android/android_264_1.png">[截图1]</a>
+            <a href="http://img01.51jobcdn.com/im/3G/im/client/android/android_264_2.png">[截图2]</a>
+            <a href="http://img01.51jobcdn.com/im/3G/im/client/android/android_264_4.png">[截图3]</a><br>
+            <img src="http://img01.51jobcdn.com/im/3G/im/client/android/android_264_1.png" width="160" height="240">
+        </div>
+
+        <div class="xzbottom" align="center"><a href="http://trace.51job.com/mktrace.php?tag=wzhan_wap_and_272_download&amp;u=aHR0cDovL3d3dy41MWpvYi5jb20vY2xpZW50LzUxam9iXzUxSk9CXzJfQU5EMi43LjIuYXBr&amp;k=cbe78a0b943b8c2c8248f0fb1143d642"><img src="http://img01.51jobcdn.com/im/3G/im/client/android/button.png" width="114" height="37" border="0"></a></div>
+
+        <div class="foot">
+            <br>
+            <a href="http://3g.51job.com/">传统版</a>	|	<a href="http://m.51job.com/">触屏版</a>
+        </div>
+
+    </div>
+    <a id="linkAndroid" href="http://hqdown.oss-cn-hangzhou.aliyuncs.com/">下载安卓</a>
+    <a id="linkIos" href="http://hqdown.oss-cn-hangzhou.aliyuncs.com/">ios</a>
+    <button id="btnAndroid"></button>
+</body>
+</html>
